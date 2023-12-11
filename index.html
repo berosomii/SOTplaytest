@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Skies Of Thymera</title>
+    <title>Unity WebGL Player | Skies of Thymera</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=6400 height=4800 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=640 height=480 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Skies Of Thymera</div>
+        <div id="unity-build-title">Skies of Thymera</div>
       </div>
     </div>
     <script>
@@ -57,14 +57,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Thymera buildtest.loader.js";
+      var loaderUrl = buildUrl + "/SOTbuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Thymera buildtest.data",
-        frameworkUrl: buildUrl + "/Thymera buildtest.framework.js",
-        codeUrl: buildUrl + "/Thymera buildtest.wasm",
+        dataUrl: buildUrl + "/SOTbuild.data",
+        frameworkUrl: buildUrl + "/SOTbuild.framework.js",
+        codeUrl: buildUrl + "/SOTbuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "SteamShark Games",
-        productName: "Skies Of Thymera",
+        productName: "Skies of Thymera",
         productVersion: "2.0",
         showBanner: unityShowBanner,
       };
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "6400px";
-        canvas.style.height = "4800px";
+        canvas.style.width = "640px";
+        canvas.style.height = "480px";
       }
 
       loadingBar.style.display = "block";
